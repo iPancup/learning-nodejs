@@ -1,8 +1,7 @@
-var express = require('express');
-var app = express();
+var http;
 
-app.get('/', function(req,res) {
-    res.send('Hello Rafiuddd');
+http.createServer(function(req,res){
+    res.end('{ "success:true", "data:Index", "message:Hello World", "code:200"}');
 })
 
 app.listen(process.env.PORT || 3000, function(){
